@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Team from "./components/Team";
+import Team from "./components/team";
 import "./App.css";
 
 // 8 Pokémon məlumatı — hər oyunda bunlar ikiyə bölünür
