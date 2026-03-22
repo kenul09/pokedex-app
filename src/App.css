@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka", sans-serif
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("https://wallpapers-clan.com/wp-content/uploads/2025/10/milky-way-galaxy-over-blue-mountain-gif-desktop-wallpaper-preview.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+```
+
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== APP ===== */
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ===== HEADER ===== */
+.app-header {
+  text-align: center;
+  padding: 20px 0 16px;
+  margin-bottom: 0;
+}
+
+.app-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: white
+}
+
+.start-btn {
+  background-color: #06daff;
+  color: rgb(5, 1, 37);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.start-btn:hover {
+  background-color: #0226c6;
+}
+
+/* ===== VS AYIRICI ===== */
+.vs-divider {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.vs-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #f9f8f8;
+}
+
+/* ===== TEAM ===== */
+.team {
+  opacity: 0.8;
+  padding: 20px;
+  background-color: #062d4a; 
+  border-radius: 12px;
+  box-shadow: #04deff 0px 4px 12px;
+ 
+}
+
+/* Nəticə mətni */
+.team-result {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.result--winner {
+  color: #00ff00; /* yaşıl */
+}
+
+.result--lose {
+  color: #ff360e; /* qırmızı */
+}
+
+/* Ümumi EXP */
+.team-exp {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+
+.team-cards {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== POKEMON KARTI ===== */
+.card {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 12px;
+  padding: 14px 12px;
+  width: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.card-name {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Pokémon şəkli */
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Tip və EXP mətnləri */
+.card-type,
+.card-exp {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.read-btn {
+  background-color: #0a0332;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+
+.read-btn:hover {
+  background-color: #0b68ff;
+}
+
+/* ===== RESPONSİV ===== */
+@media (max-width: 640px) {
+  .team-cards {
+    gap: 10px;
+  }
+
+  .card {
+    width: 140px;
+  }
+}
